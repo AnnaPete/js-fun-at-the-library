@@ -1,5 +1,6 @@
 function createTitle() {
-  
+  return "The Storm's Awakening";
+
 }
 
 module.exports = {
