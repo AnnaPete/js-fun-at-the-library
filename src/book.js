@@ -1,5 +1,5 @@
-function createTitle() {
-  return "The Storm's Awakening";
+function createTitle(partialTitle) {
+  return "The " + partialTitle;
 
 }
 

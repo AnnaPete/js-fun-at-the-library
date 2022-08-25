@@ -22,13 +22,14 @@ describe("book.js", function () {
       assert.equal(bookIdea, "The Storm's Awakening");
     });
 
-    it.skip("should be able to create many modified titles", function () {
+    it("should be able to create many modified titles", function () {
       var sushiTitle = createTitle("Dancing Sushi");
-      var dragonTitle = createTitle("Dragon in the Summer");
-      var ghostTitle = createTitle("Teenage Ghoul");
-
       assert.equal(sushiTitle, "The Dancing Sushi");
+
+      var dragonTitle = createTitle("Dragon in the Summer");
       assert.equal(dragonTitle, "The Dragon in the Summer");
+
+      var ghostTitle = createTitle("Teenage Ghoul");
       assert.equal(ghostTitle, "The Teenage Ghoul");
     });
   });
