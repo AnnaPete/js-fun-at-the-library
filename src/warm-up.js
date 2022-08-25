@@ -44,13 +44,13 @@ var isFavorite = true;
 // variable should be true, otherwise it should be false. You MUST use a
 // comparison operator.
 
-var isShortStory =
-if (pages < 25) {
-  isShortStory === true
+var isShortStory = {
+  if (pages < 25) {
+    isShortStory === true
 } else {
   isShortStory === false
 }
-
+}
 
 //------------------------- Conditionals -------------------------//
 
