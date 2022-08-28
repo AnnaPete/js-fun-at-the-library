@@ -14,18 +14,27 @@ function saveReview(statement, listOfReviews) {
   if(listOfReviews.includes(statement) === false) {
     listOfReviews.push(statement)
   };
-console.log("Array of listOfReviews with methods", listOfReviews);
+  console.log("Array of listOfReviews with methods", listOfReviews);
 };
 
 function calculatePageCount(title) {
   return title.length * 20
 }
 
-function calculatePageCount(title) {
-  var bookTitle = createTitle("Dragon in the Summer") {
-    if (bookTitle = )
+
+
+function writeBook(title, character, genre) {
+  return {
+    title: title,
+    mainCharacter: character,
+    pageCount: calculatePageCount(title),
+    genre: genre
   }
-    return title.length *20
+}
+
+
+function editBook(book) {
+  book.pageCount = book.pageCount * 3 / 4
 }
 
 
@@ -34,6 +43,6 @@ module.exports = {
   buildMainCharacter,
   saveReview,
   calculatePageCount,
-  // writeBook,
-  // editBook
+  writeBook,
+  editBook
 }
